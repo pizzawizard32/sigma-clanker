@@ -9,3 +9,7 @@ This is a list of things you must know before using:
 - This is a userbot/self-bot
 - This project is against Discord's Terms of Service due to them disallowing raiding and selfbotting
 - This bot is not made to be abused; avoid raiding a random server, I don't want to help bad people
+
+## Community (🇮🇹)
+Join our community, if you want. Note that we're more focused on pictures of my brother's dog (Carota) rather than raids.
+https://discord.gg/t3tKaUWTBu
