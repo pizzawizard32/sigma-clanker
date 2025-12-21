@@ -1,4 +1,4 @@
-# sigma male
+# sigma clanker
 This is a raid Discord bot for raiding Discord servers. Please do not abuse it!
 
 ## Why does this even exist?
