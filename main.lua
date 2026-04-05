@@ -3,26 +3,27 @@ local client = discordia.Client()
 discordia.extensions.string()
 math.randomseed(os.time())
 
+local echomsg = "@everyone\nTHIS MESSAGE HAS BEEN SENT BY REAL PATRIOTS FROM THE PEOPLE'S FEDERAL REPUBLIC OF CAROTA."
+local imagelink = "https://files.catbox.moe/44w4wc.png"
+
 local raid = false
 
 client:on('messageCreate', function(msg)
 	local content = msg.content
 	local lower = string.lower(content)
 
-	if msg.author.id == client.user.id then
-		if lower == '!do' then
-			raid = true
-			repeat
-				msg.channel:send("@everyone\nIf you read this then... I'm sorry... you're not a sigma.\nThis message has been sent by real sigmas from carota's community.\nhttps://files.catbox.moe/44w4wc.png")
-			until raid == false
-		elseif lower == '!stop' then
-			raid = false
-		elseif lower == '!nl' then
-			raid = true
-			repeat
-				msg.channel:send("@everyone\nIf you read this then... I'm sorry... you're not a sigma.\nThis message has been sent by real sigmas from carota's community. (link: t3tKaUWTBu)")
-			until raid == false
-		end
+	if lower == '!yap' then
+		raid = true
+		repeat
+			msg.channel:send(echomsg.."\n"..imagelink)
+		until raid == false
+	elseif lower == '!shutup' then
+		raid = false
+	elseif lower == '!yap noimage' then
+		raid = true
+		repeat
+			msg.channel:send(echomsg)
+		until raid == false
 	end
 end)
 
