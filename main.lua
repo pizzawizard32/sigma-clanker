@@ -48,7 +48,7 @@ client:on('messageCreate', function(msg)
 		msg:reply(">>> # RESULT/RISULTATO\nE' uscito il numero **"..number.."**!\nYou've got the number **"..number.."**!")
 	end
 
-	print(msg.channel.guild.name.." / #"..msg.channel.name.." / @"..msg.author.tag..": "..msg.content)
+	print("@"..msg.author.tag..": "..msg.content)
 end)
 
 client:run("USER_TOKEN")
